@@ -30,12 +30,40 @@ void carregarVendedores(){
 	strcpy(vendedor[1].NomeVendedor, "MARIA HELENA");
 	strcpy(vendedor[2].NomeVendedor, "MARCIA ANTONIETA");
 	
+	/*
 	int i = 0;
 	for(i = 0; i < 3; i++){
 	 	vendedor[i].QuantidadeDeItensVendidos = 0;
 	 	vendedor[i].TotalDePedidos = 0;
 	 	vendedor[i].TotalDeComissao = 0;
 	}
+	*/
+	FILE* arquivo = fopen("vendas.txt", "r");
+	if(arquivo == NULL) {
+        printf("Erro ao abrir o arquivo vendas.txt.\n");
+        getch();
+        exit(0);
+    }
+	int i = 0;
+	for(i = 0; i < 3; i++){
+		fscanf(arquivo,"%d %f %f\n", &vendedor[i].QuantidadeDeItensVendidos, &vendedor[i].TotalDePedidos, &vendedor[i].TotalDeComissao);
+	}
+
+	fclose(arquivo);
+}
+
+cadastrarValoresNoArquivo(){
+	FILE* arquivo = fopen("vendas.txt", "w");
+    if(arquivo == NULL) {
+        printf("Erro ao abrir o arquivo vendas.txt.\n");
+        getch();
+        exit(0);
+    }
+	int i = 0;
+	for(i = 0; i < 3; i++){
+    	fprintf(arquivo, "%d %.2f %.2f\n", vendedor[i].QuantidadeDeItensVendidos, vendedor[i].TotalDePedidos, vendedor[i].TotalDeComissao);
+    }
+    fclose(arquivo);
 }
 
 void carregarProdutos(){
@@ -160,6 +188,8 @@ encerrarPedido(codigoVendedor, y){
 	
 	gotoxy(1, y+4);
 	printf("Percentual de comissão: %.2f%%", porcentagemComissao*100);
+	
+	cadastrarValoresNoArquivo();
 	
 	gotoxy(1, y+6);
 	char continuar;
