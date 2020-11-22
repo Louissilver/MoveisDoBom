@@ -4,6 +4,7 @@
 #include <conio2.h>
 #include <string.h>
 #include <locale.h>
+#include <time.h>
 
 struct listaVendedores{
 	int CodigoVendedor;
@@ -21,6 +22,30 @@ struct listaProdutos{
 }
 produto[15];
 
+void salvarDataNoArquivo(){
+	struct tm *data_hora_atual;
+	time_t segundos;
+	time(&segundos);    
+	data_hora_atual = localtime(&segundos);  
+
+	FILE* arquivo = fopen("pedidos.txt", "a");
+    if(arquivo == NULL) {
+        printf("Erro ao abrir o arquivo vendas.txt.\n");
+        getch();
+        exit(0);
+    }
+
+	fprintf(arquivo, "\n\tData e hora do pedido: %d/", data_hora_atual->tm_mday);
+	fprintf(arquivo, "%d/",data_hora_atual->tm_mon+1);
+	fprintf(arquivo, "%d",data_hora_atual->tm_year+1900);
+	
+	fprintf(arquivo, " - %d:",data_hora_atual->tm_hour);   
+	fprintf(arquivo, "%d:",data_hora_atual->tm_min);
+	fprintf(arquivo, "%2d\n",data_hora_atual->tm_sec);
+  
+	fclose(arquivo);
+}
+
 void carregarVendedores(){
 	vendedor[0].CodigoVendedor = 1;
 	vendedor[1].CodigoVendedor = 2;
@@ -30,14 +55,6 @@ void carregarVendedores(){
 	strcpy(vendedor[1].NomeVendedor, "MARIA HELENA");
 	strcpy(vendedor[2].NomeVendedor, "MARCIA ANTONIETA");
 	
-	/*
-	int i = 0;
-	for(i = 0; i < 3; i++){
-	 	vendedor[i].QuantidadeDeItensVendidos = 0;
-	 	vendedor[i].TotalDePedidos = 0;
-	 	vendedor[i].TotalDeComissao = 0;
-	}
-	*/
 	FILE* arquivo = fopen("vendas.txt", "r");
 	if(arquivo == NULL) {
         printf("Erro ao abrir o arquivo vendas.txt.\n");
@@ -242,6 +259,20 @@ inserirProduto(int codigoVendedor, int y){
 	gotoxy(69, y);
 	printf("%.2f", valorTotalProduto);
 	vendedor[codigoVendedor].TotalDePedidos += valorTotalProduto;
+	
+	salvarDataNoArquivo();
+	
+	FILE* arquivo = fopen("pedidos.txt", "a");
+    if(arquivo == NULL) {
+        printf("Erro ao abrir o pedidos.txt.\n");
+        getch();
+		exit(0);
+    }
+
+    fprintf(arquivo, "Cod Vendedor | Nome Vendedor       | Cod Prod | Descr Prod             | Preco Unit R$ | Qtd Vendida | Total R$\n");
+    fprintf(arquivo, "%-2d           | %-19s | %-9d| %-22s | %-6.2f        | %-2d          | %-4.2f\n", codigoVendedor+1, vendedor[codigoVendedor].NomeVendedor, codigoProduto, produto[codigoProduto-1].DescricaoProduto, produto[codigoProduto-1].PrecoUnitario, quantidadeProduto, valorTotalProduto);
+    fclose(arquivo);
+
 	} else{
 		printf("Opção inválida. Pressione qualquer tecla para tentar novamente.");
 		getch();
@@ -317,6 +348,24 @@ totalizacaoDePedidos(){
 	}
 }
 
+exibirLogDePedidos(){
+	clrscr();
+	cabecalho();
+	printf("\nLOG DE PEDIDOS\n\n");
+	char info[200];
+	FILE* arquivo = fopen("pedidos.txt", "r");
+    if(arquivo == NULL) {
+        printf("Erro ao abrir o arquivo vendas.txt.\n");
+        getch();
+        exit(0);
+    }
+
+	while((fgets(info, sizeof(info), arquivo))!=NULL )
+   		printf("%s", info);
+  
+	fclose(arquivo);
+}
+
 void menuPrincipal(){
 	clrscr();
 	cabecalho();
@@ -328,6 +377,7 @@ void menuPrincipal(){
 	puts("2 - TOTALIZAÇÃO DE PEDIDOS");
 	puts("3 - EXIBIR LISTA DE PRODUTOS");
 	puts("4 - EXIBIR LISTA DE VENDEDORES");
+	puts("5 - EXIBIR LOG DE PEDIDOS");
 	puts("Q - SAIR");
 	
 	printf("\nOpção: ");
@@ -345,6 +395,9 @@ void menuPrincipal(){
 			break;
 		case '4':
 			exibirListaDeVendedores();
+			break;
+		case '5':
+			exibirLogDePedidos();
 			break;
 		case 'q':
 		case 'Q':

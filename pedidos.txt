@@ -1,0 +1,36 @@
+
+	Data e hora do pedido: 22/11/2020 - 19:34:23
+Cod Vendedor | Nome Vendedor       | Cod Prod | Descr Prod             | Preco Unit R$ | Qtd Vendida | Total R$
+1            | JOSE ANTONIO MATEUS | 1        | CADEIRA BRANCA         | 25,00         | 1           | 25,00
+
+	Data e hora do pedido: 22/11/2020 - 19:34:23
+Cod Vendedor | Nome Vendedor       | Cod Prod | Descr Prod             | Preco Unit R$ | Qtd Vendida | Total R$
+1            | JOSE ANTONIO MATEUS | 1        | CADEIRA BRANCA         | 25,00         | 1           | 25,00
+
+	Data e hora do pedido: 22/11/2020 - 19:34:24
+Cod Vendedor | Nome Vendedor       | Cod Prod | Descr Prod             | Preco Unit R$ | Qtd Vendida | Total R$
+1            | JOSE ANTONIO MATEUS | 1        | CADEIRA BRANCA         | 25,00         | 1           | 25,00
+
+	Data e hora do pedido: 22/11/2020 - 19:34:24
+Cod Vendedor | Nome Vendedor       | Cod Prod | Descr Prod             | Preco Unit R$ | Qtd Vendida | Total R$
+1            | JOSE ANTONIO MATEUS | 1        | CADEIRA BRANCA         | 25,00         | 1           | 25,00
+
+	Data e hora do pedido: 22/11/2020 - 19:34:25
+Cod Vendedor | Nome Vendedor       | Cod Prod | Descr Prod             | Preco Unit R$ | Qtd Vendida | Total R$
+1            | JOSE ANTONIO MATEUS | 1        | CADEIRA BRANCA         | 25,00         | 1           | 25,00
+
+	Data e hora do pedido: 22/11/2020 - 19:34:25
+Cod Vendedor | Nome Vendedor       | Cod Prod | Descr Prod             | Preco Unit R$ | Qtd Vendida | Total R$
+1            | JOSE ANTONIO MATEUS | 1        | CADEIRA BRANCA         | 25,00         | 1           | 25,00
+
+	Data e hora do pedido: 22/11/2020 - 19:34:26
+Cod Vendedor | Nome Vendedor       | Cod Prod | Descr Prod             | Preco Unit R$ | Qtd Vendida | Total R$
+1            | JOSE ANTONIO MATEUS | 1        | CADEIRA BRANCA         | 25,00         | 1           | 25,00
+
+	Data e hora do pedido: 22/11/2020 - 19:34:26
+Cod Vendedor | Nome Vendedor       | Cod Prod | Descr Prod             | Preco Unit R$ | Qtd Vendida | Total R$
+1            | JOSE ANTONIO MATEUS | 1        | CADEIRA BRANCA         | 25,00         | 1           | 25,00
+
+	Data e hora do pedido: 22/11/2020 - 19:34:27
+Cod Vendedor | Nome Vendedor       | Cod Prod | Descr Prod             | Preco Unit R$ | Qtd Vendida | Total R$
+1            | JOSE ANTONIO MATEUS | 1        | CADEIRA BRANCA         | 25,00         | 1           | 25,00
