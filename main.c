@@ -157,15 +157,16 @@ void exibirListaDeVendedores(){
 	for(i = 0; i < 3; i++){
 	printf("%d \t\t %s\n", vendedor[i].CodigoVendedor, vendedor[i].NomeVendedor);
 	}
-	printf("\n\nAperte qualquer tecla para voltar ao menu principal.\nOu aperte 'ESC' para sair.");
-	char opcao = getch();
-	switch(opcao){
+	printf("\nPressione qualquer tecla para voltar ao menu, ou pressione 'ESC' para sair.");
+	char sair = getch();
+	fflush(stdin);
+	switch(sair){
 		case 27:
 			exit(0);
 			break;
 		default:
-		menuPrincipal();
-		break;
+			menuPrincipal();
+			break;
 	}
 }
 
@@ -178,15 +179,16 @@ void exibirListaDeProdutos(){
 	for(i = 0; i < 15; i++){
 	printf("%-2d \t\t %-22s \t %3.2f\n", produto[i].CodigoProduto, produto[i].DescricaoProduto, produto[i].PrecoUnitario);
 	}
-	printf("\n\nAperte qualquer tecla para voltar ao menu principal.\nOu aperte 'ESC' para sair.");
-	char opcao = getch();
-	switch(opcao){
+	printf("\nPressione qualquer tecla para voltar ao menu, ou pressione 'ESC' para sair.");
+	char sair = getch();
+	fflush(stdin);
+	switch(sair){
 		case 27:
 			exit(0);
 			break;
 		default:
-		menuPrincipal();
-		break;
+			menuPrincipal();
+			break;
 	}
 }
 
@@ -201,7 +203,7 @@ encerrarPedido(codigoVendedor, y){
 	printf("Valor total do pedido: R$%.2f", vendedor[codigoVendedor].TotalDePedidos);
 	
 	float porcentagemComissao = calcularComissao(vendedor[codigoVendedor].QuantidadeDeItensVendidos);
-	vendedor[codigoVendedor].TotalDeComissao = ((1+porcentagemComissao)*vendedor[codigoVendedor].TotalDePedidos);
+	vendedor[codigoVendedor].TotalDeComissao = ((porcentagemComissao)*vendedor[codigoVendedor].TotalDePedidos);
 	
 	gotoxy(1, y+4);
 	printf("Percentual de comissão: %.2f%%", porcentagemComissao*100);
@@ -336,15 +338,16 @@ totalizacaoDePedidos(){
 	
 	printf("VALOR DA COMISSÃO COM BONUS: R$%.2f", vendedor[campeaoDeVendas].TotalDeComissao+1200);
 	
-	printf("\n\nAperte qualquer tecla para voltar ao menu principal.\nOu aperte 'ESC' para sair.");
-	char opcao = getch();
-	switch(opcao){
+	printf("\nPressione qualquer tecla para voltar ao menu, ou pressione 'ESC' para sair.");
+	char sair = getch();
+	fflush(stdin);
+	switch(sair){
 		case 27:
 			exit(0);
 			break;
 		default:
-		menuPrincipal();
-		break;
+			menuPrincipal();
+			break;
 	}
 }
 
@@ -364,6 +367,18 @@ exibirLogDePedidos(){
    		printf("%s", info);
   
 	fclose(arquivo);
+	
+	printf("\nPressione qualquer tecla para voltar ao menu, ou pressione 'ESC' para sair.");
+	char sair = getch();
+	fflush(stdin);
+	switch(sair){
+		case 27:
+			exit(0);
+			break;
+		default:
+			menuPrincipal();
+			break;
+	}
 }
 
 void menuPrincipal(){

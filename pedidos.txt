@@ -1,36 +1,32 @@
 
-	Data e hora do pedido: 22/11/2020 - 19:34:23
+	Data e hora do pedido: 22/11/2020 - 20:41:56
+Cod Vendedor | Nome Vendedor       | Cod Prod | Descr Prod             | Preco Unit R$ | Qtd Vendida | Total R$
+1            | JOSE ANTONIO MATEUS | 14       | CAMA DE CASAL          | 399,00        | 2           | 798,00
+
+	Data e hora do pedido: 22/11/2020 - 20:42: 3
+Cod Vendedor | Nome Vendedor       | Cod Prod | Descr Prod             | Preco Unit R$ | Qtd Vendida | Total R$
+1            | JOSE ANTONIO MATEUS | 2        | CADEIRA PRETA          | 28,90         | 4           | 115,60
+
+	Data e hora do pedido: 22/11/2020 - 20:42:23
+Cod Vendedor | Nome Vendedor       | Cod Prod | Descr Prod             | Preco Unit R$ | Qtd Vendida | Total R$
+1            | JOSE ANTONIO MATEUS | 5        | MESA DE MADEIRA 2x2    | 259,90        | 1           | 259,90
+
+	Data e hora do pedido: 22/11/2020 - 20:43:15
+Cod Vendedor | Nome Vendedor       | Cod Prod | Descr Prod             | Preco Unit R$ | Qtd Vendida | Total R$
+2            | MARIA HELENA        | 12       | RACK PARA TV           | 189,90        | 1           | 189,90
+
+	Data e hora do pedido: 22/11/2020 - 20:43:23
+Cod Vendedor | Nome Vendedor       | Cod Prod | Descr Prod             | Preco Unit R$ | Qtd Vendida | Total R$
+2            | MARIA HELENA        | 13       | CAMA DE SOLTEIRO       | 220,00        | 0           | 0,00
+
+	Data e hora do pedido: 22/11/2020 - 20:43:42
+Cod Vendedor | Nome Vendedor       | Cod Prod | Descr Prod             | Preco Unit R$ | Qtd Vendida | Total R$
+3            | MARCIA ANTONIETA    | 7        | GUARDA ROUPAS INFANTIL | 450,00        | 5           | 2250,00
+
+	Data e hora do pedido: 22/11/2020 - 20:49: 5
 Cod Vendedor | Nome Vendedor       | Cod Prod | Descr Prod             | Preco Unit R$ | Qtd Vendida | Total R$
 1            | JOSE ANTONIO MATEUS | 1        | CADEIRA BRANCA         | 25,00         | 1           | 25,00
 
-	Data e hora do pedido: 22/11/2020 - 19:34:23
+	Data e hora do pedido: 22/11/2020 - 20:51:42
 Cod Vendedor | Nome Vendedor       | Cod Prod | Descr Prod             | Preco Unit R$ | Qtd Vendida | Total R$
-1            | JOSE ANTONIO MATEUS | 1        | CADEIRA BRANCA         | 25,00         | 1           | 25,00
-
-	Data e hora do pedido: 22/11/2020 - 19:34:24
-Cod Vendedor | Nome Vendedor       | Cod Prod | Descr Prod             | Preco Unit R$ | Qtd Vendida | Total R$
-1            | JOSE ANTONIO MATEUS | 1        | CADEIRA BRANCA         | 25,00         | 1           | 25,00
-
-	Data e hora do pedido: 22/11/2020 - 19:34:24
-Cod Vendedor | Nome Vendedor       | Cod Prod | Descr Prod             | Preco Unit R$ | Qtd Vendida | Total R$
-1            | JOSE ANTONIO MATEUS | 1        | CADEIRA BRANCA         | 25,00         | 1           | 25,00
-
-	Data e hora do pedido: 22/11/2020 - 19:34:25
-Cod Vendedor | Nome Vendedor       | Cod Prod | Descr Prod             | Preco Unit R$ | Qtd Vendida | Total R$
-1            | JOSE ANTONIO MATEUS | 1        | CADEIRA BRANCA         | 25,00         | 1           | 25,00
-
-	Data e hora do pedido: 22/11/2020 - 19:34:25
-Cod Vendedor | Nome Vendedor       | Cod Prod | Descr Prod             | Preco Unit R$ | Qtd Vendida | Total R$
-1            | JOSE ANTONIO MATEUS | 1        | CADEIRA BRANCA         | 25,00         | 1           | 25,00
-
-	Data e hora do pedido: 22/11/2020 - 19:34:26
-Cod Vendedor | Nome Vendedor       | Cod Prod | Descr Prod             | Preco Unit R$ | Qtd Vendida | Total R$
-1            | JOSE ANTONIO MATEUS | 1        | CADEIRA BRANCA         | 25,00         | 1           | 25,00
-
-	Data e hora do pedido: 22/11/2020 - 19:34:26
-Cod Vendedor | Nome Vendedor       | Cod Prod | Descr Prod             | Preco Unit R$ | Qtd Vendida | Total R$
-1            | JOSE ANTONIO MATEUS | 1        | CADEIRA BRANCA         | 25,00         | 1           | 25,00
-
-	Data e hora do pedido: 22/11/2020 - 19:34:27
-Cod Vendedor | Nome Vendedor       | Cod Prod | Descr Prod             | Preco Unit R$ | Qtd Vendida | Total R$
-1            | JOSE ANTONIO MATEUS | 1        | CADEIRA BRANCA         | 25,00         | 1           | 25,00
+1            | JOSE ANTONIO MATEUS | 2        | CADEIRA PRETA          | 28,90         | 2           | 57,80
